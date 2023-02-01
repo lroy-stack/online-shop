@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <style>
+    /* Estilo para la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo para el formulario */
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .form-container img {
+    position: absolute;
+    bottom: 30;
+    left: 530;
+    width: 500px;
+    height: 500px;
+  }
+
+    /* Estilo para los inputs */
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      font-size: 16px;
+    }
+
+    /* Estilo para el botón enviar */
+    .form-submit-btn {
+      background-color: #0074D9;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenedor del formulario -->
+  <div class="form-container">
+    <h2>Formulario de contacto</h2>
+    <!-- Formulario -->
+    <form action="#">
+      <!-- Input para el nombre -->
+      <input type="text" class="form-input" placeholder="Nombre" required>
+      <!-- Input para el correo electrónico -->
+      <input type="email" class="form-input" placeholder="Correo electrónico" required>
+      <!-- Input para el mensaje -->
+      <textarea class="form-input" rows="5" placeholder="Mensaje" required></textarea>
+      <!-- Botón enviar -->
+      <input type="submit" value="Enviar" class="form-submit-btn">
+    </form>
+    <img src="assets/snow.png" alt="Snowy Mountain" style="position: absolute; bottom: 0; left: 0;">
+  </div>
+</body>
+</html>
